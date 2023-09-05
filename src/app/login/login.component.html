@@ -6,14 +6,14 @@
         </div>
     </mat-card-header>
     <mat-card-content>
-        <form>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <mat-form-field class="full-width" appearance="outline">
-                <input matInput placeholder="Username" type="text" name="username" required>
+                <input matInput placeholder="Email" type="email" name="email" required formControlName="email">
             </mat-form-field>
             <mat-form-field class="full-width" appearance="outline">
-                <input matInput placeholder="Password" type="password" name="password" required>
+                <input matInput placeholder="Password" type="password" name="password" required formControlName="password">
             </mat-form-field>
-            <button mat-raised-button color="primary" class="full-width" routerLink="/lecturer/dashboard">Login</button>
+            <button mat-raised-button color="primary" class="full-width">Login</button>
         </form>
     </mat-card-content>
 </mat-card>
