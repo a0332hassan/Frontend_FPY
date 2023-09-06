@@ -30,7 +30,7 @@ import { MatInputModule } from '@angular/material/input';
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

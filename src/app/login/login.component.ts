@@ -10,15 +10,22 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit{
 
-  loginForm! : FormGroup ;
+  loginForm! : FormGroup;
 
   constructor(private authService :  AuthService , private formBuilder : FormBuilder , private router : Router){}
 
   ngOnInit(): void {
+
+    if(localStorage.getItem('token')){
+      this.authService.setLecturerLoggedIn();
+      this.router.navigate(['/lecturer/dashboard'])
+    }
+
     this.loginForm = this.formBuilder.group({
       email : ['' , Validators.required],
       password : ['' , Validators.required]
     })
+
   }
 
   onSubmit(){

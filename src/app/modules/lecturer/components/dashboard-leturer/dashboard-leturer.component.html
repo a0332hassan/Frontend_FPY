@@ -1,1 +1,85 @@
-<p>dashboard-leturer works!</p>
+<mat-sidenav-container class="example-container">
+  <!-- Side Navigation -->
+  <mat-sidenav mode="side" opened class="side-nav">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+    </div>
+    <ul class="nav-list">
+      <div>
+        <li class="nav-item"><a routerLink="/reviews"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>Dashboard</a></li>
+        <li class="nav-item"><a routerLink="/settings"><mat-icon aria-hidden="false" aria-label="Example home icon">add_task</mat-icon>Reviews</a></li>
+      </div>
+      <div>
+        <li class="nav-item"><a routerLink="/settings"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_upward</mat-icon>Logout</a></li>
+      </div>
+    </ul>
+  </mat-sidenav>
+
+  <!-- Main Content -->
+  <mat-sidenav-content class="main-content">
+    <!-- Welcome Message -->
+    <div class="welcome-message">
+      <h1>Welcome to IOT Smart Lecture Hall System</h1>
+    </div>
+
+    <!-- Card with Sections -->
+    <mat-card class="section-card">
+      <mat-card-header>
+        <mat-card-title>Smart Lecture Hall</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="controlls">
+        <!-- Lights Section -->
+        <div>
+          <div class="section">
+            <h2>Lights</h2>
+            <div class="flex-row">
+              <mat-slide-toggle>Turn On/Off</mat-slide-toggle>
+              <!-- Add more light controls here -->
+            </div>
+          </div>
+  
+          <!-- Fans Section -->
+          <div class="section">
+            <h2>Fans</h2>
+            <div class="flex-row">
+              <mat-slide-toggle>Turn On/Off</mat-slide-toggle>
+              <!-- Add more fan controls here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- AC Section -->
+        <div>
+          <div class="section">
+            <h2>AC</h2>
+            <div class="flex-row">
+              <mat-slider min="16" max="30" step="1" thumbLabel="true"></mat-slider>
+              <p>Room Temperature: <span class="temperature">23°C</span></p>
+              <!-- Add more AC controls here -->
+            </div>
+          </div>
+          <div class="section">
+            <h2>AC</h2>
+            <div class="flex-row">
+              <mat-slider min="16" max="30" step="1" thumbLabel="true"></mat-slider>
+              <p>Room Temperature: <span class="temperature">23°C</span></p>
+              <!-- Add more AC controls here -->
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Live Feedback Video Card -->
+    <mat-card class="feedback-card">
+      <mat-card-header>
+        <mat-card-title>Live Feedback Video</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <!-- Add live feedback video here -->
+      </mat-card-content>
+    </mat-card>
+    
+    <!-- Your main content here (e.g., router-outlet) -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
