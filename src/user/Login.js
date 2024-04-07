@@ -7,7 +7,7 @@ export default class Login extends Component{
            <div className="login-page">
             <div className="login-box">
                 <div className="login-logo">
-                <a href="/"><b>FPM</b></a>
+                <a href="/"><b>FM</b></a>
                 </div>
                 {/* /.login-logo */}
                 <div className="card">

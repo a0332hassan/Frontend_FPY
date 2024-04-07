@@ -6,6 +6,9 @@ import Register from './user/Register';
 import ForgotPassword from './user/ForgotPassword';
 import RecoverPassword from './user/RecoverPossword';
 import Dashboard from './Dashboard';
+import User from './user/User';
+import Customer from './customer/Customer';
+import Product from './product/Product';
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route path='/forgot-password' Component={ForgotPassword}></Route>
         <Route path='/recover-password' Component={RecoverPassword}></Route>
         <Route path='/dashboard' Component={Dashboard}></Route>
+        <Route path='/users' Component={User}></Route>
+        <Route path='/customers' Component={Customer}></Route>
+        <Route path='/products' Component={Product}></Route>
       </Routes>
     </BrowserRouter>
   );

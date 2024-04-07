@@ -8,7 +8,7 @@ export default class RecoverPassword extends Component
             <div className="login-page">
                 <div className="login-box">
                     <div className="login-logo">
-                    <a href="../../index2.html"><b>FPY</b></a>
+                    <a href="../../index2.html"><b>FM</b></a>
                     </div>
                     {/* /.login-logo */}
                     <div className="card">
